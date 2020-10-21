@@ -14,7 +14,7 @@ This model also uses adam, which is a stochastic gradient-based optimizer.  Whil
 
 ## Part 2 - Unsupervised Learning
 
-Also in this folder is the file, "hw2-2.py", which pulls in data from "p2-data.csv" and builds a Gaussian Mixture Model distribution over the data.  I have included (but commented out) the code to plot the graphs and ellipsoids built by this model as well as a competing model (the Dirichlet Process Model, which has the added ability to adjust the components it tries to fit to the data automatically, unlike being locked in on the input as the GMM is).  However, from using the competing approaches, I was able to confidently determine there should be 5 clusters in this data, as this is where they both performed very similarly (and also where the Dirichlet converged even with 6+ components allowed).
+Also in this folder is the file, "hw2-2.py", which pulls in data from "p2-data.csv" and builds a Gaussian Mixture Model distribution over the data.  I have included (but commented out) the code to plot the graphs and ellipsoids built by this model as well as a competing model (the Bayesian Gaussian Mixture class model with a Dirichlet process prior), which has the added ability to adjust the components it tries to fit to the data automatically, unlike being locked in on the input as the GMM is).  However, from using the competing approaches, I was able to confidently determine there should be 5 clusters in this data, as this is where they both performed very similarly (and also where the Dirichlet converged even with 6+ components allowed).
 
 The output of this program is the "part2-output.txt" file, which contains the 5 clusters means and covariances, followed by the cluster assignment for each data point in the original "p2-data" file.
 
